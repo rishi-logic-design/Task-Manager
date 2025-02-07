@@ -1,15 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "index.js"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/tasks",
+      "dest": "/index.js"
+    },
+    {
+      "src": "/tasks/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "PORT": "8080",
+    "MONGO_URI": "mongodb+srv://rishi:rishi2005@todos.05x0a.mongodb.net/todos?retryWrites=true&w=majority&appName=todos"
+  }
 }
