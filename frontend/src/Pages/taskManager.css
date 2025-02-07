@@ -1,0 +1,16 @@
+.task-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.task-item {
+    transition: transform 0.2s ease-in-out;
+}
+
+.task-item:hover {
+    transform: scale(1.02);
+}
+
+.btn-group button {
+    min-width: 40px;
+}
