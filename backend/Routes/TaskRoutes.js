@@ -1,4 +1,4 @@
-const { createTask, fetchAllTask, updateTaskById, deleteTaskById, } = require('../Controllers/TaskControllers');
+const { createTask, fetchAllTask, updateTaskById, deleteTaskById, } = require('../controllers/TaskControllers');
 
 const router = require('express').Router();
 
