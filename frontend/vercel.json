@@ -1,4 +1,8 @@
 {
+  {
+  "source": "/feedback/((?!general).*)",
+  "destination": "/api/feedback/general"
+}
   "version": 2,
   "builds": [
     {
